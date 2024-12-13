@@ -1,100 +1,111 @@
-# Kubernetes (K8s)
+\# KubeCraft
 
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/569/badge)](https://bestpractices.coreinfrastructure.org/projects/569) [![Go Report Card](https://goreportcard.com/badge/github.com/kubernetes/kubernetes)](https://goreportcard.com/report/github.com/kubernetes/kubernetes) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/kubernetes/kubernetes?sort=semver)
+\[!\[Go Report Card\](<https://goreportcard.com/badge/github.com/partha-architect/KubeCraft)\](https://goreportcard.com/report/github.com/partha-architect/KubeCraft)> !\[GitHub release (latest SemVer)\](<https://img.shields.io/github/v/release/partha-architect/KubeCraft?sort=semver>)
 
-<img src="https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png" width="100">
+&lt;img src="<https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png>" width="100"&gt;
 
-----
+\---
 
-Kubernetes, also known as K8s, is an open source system for managing [containerized applications]
-across multiple hosts. It provides basic mechanisms for the deployment, maintenance,
-and scaling of applications.
+KubeCraft is a streamlined version of Kubernetes designed for developers and enthusiasts who want to understand, explore, or modify Kubernetes core concepts. It includes key directories for core functionalities such as builds, clusters, commands, and third-party integrations.
 
-Kubernetes builds upon a decade and a half of experience at Google running
-production workloads at scale using a system called [Borg],
-combined with best-of-breed ideas and practices from the community.
+This repository is a public fork of Kubernetes with a reduced structure, allowing for easier navigation and customization. It retains essential components while excluding files unrelated to the focus of this repository.
 
-Kubernetes is hosted by the Cloud Native Computing Foundation ([CNCF]).
-If your company wants to help shape the evolution of
-technologies that are container-packaged, dynamically scheduled,
-and microservices-oriented, consider joining the CNCF.
-For details about who's involved and how Kubernetes plays a role,
-read the CNCF [announcement].
+\---
 
-----
+\## Key Features
 
-## To start using K8s
+\- Simplified structure with essential directories for development and learning.
 
-See our documentation on [kubernetes.io].
+\- Focused on providing clarity in Kubernetes core components like `cmd`, `build`, `docs`, and `cluster`.
 
-Take a free course on [Scalable Microservices with Kubernetes].
+\- Easy to fork, modify, and use in custom projects.
 
-To use Kubernetes code as a library in other applications, see the [list of published components](https://git.k8s.io/kubernetes/staging/README.md).
-Use of the `k8s.io/kubernetes` module or `k8s.io/kubernetes/...` packages as libraries is not supported.
+\---
 
-## To start developing K8s
+\## Repository Overview
 
-The [community repository] hosts all information about
-building Kubernetes from source, how to contribute code
-and documentation, who to contact about what, etc.
+\### Directory Structure
 
-If you want to build Kubernetes right away there are two options:
+\- **build/**: Contains scripts and resources for building Kubernetes components.
 
-##### You have a working [Go environment].
+\- **cluster/**: Includes cluster-specific scripts and tools for deployment.
 
-```
-git clone https://github.com/kubernetes/kubernetes
-cd kubernetes
+\- **cmd/**: Entry points for Kubernetes commands.
+
+\- **docs/**: Documentation related to Kubernetes.
+
+\- **hack/**: Utility scripts for testing and development.
+
+\- **third_party/**: External dependencies and third-party integrations.
+
+\### Repository URL
+
+This repository is public and available at:
+
+\[<https://github.com/partha-architect/KubeCraft.git\](https://github.com/partha-architect/KubeCraft.git)>
+
+\---
+
+\## To Start Using KubeCraft
+
+\### Requirements
+
+Ensure you have the following installed:
+
+\- **Go** (refer to \[Go installation guide\](<https://go.dev/doc/install>))
+
+\- **Docker** (refer to \[Docker installation guide\](<https://docs.docker.com/engine>))
+
+\### Steps to Build and Run
+
+\#### Using Go Environment:
+
+\`\`\`bash
+
+git clone <https://github.com/partha-architect/KubeCraft.git>
+
+cd KubeCraft
+
 make
-```
 
-##### You have a working [Docker environment].
+\`\`\`
 
-```
-git clone https://github.com/kubernetes/kubernetes
-cd kubernetes
+\#### Using Docker Environment:
+
+\`\`\`bash
+
+git clone <https://github.com/partha-architect/KubeCraft.git>
+
+cd KubeCraft
+
 make quick-release
-```
 
-For the full story, head over to the [developer's documentation].
+\`\`\`
 
-## Support
+\---
 
-If you need support, start with the [troubleshooting guide],
-and work your way through the process that we've outlined.
+\## Contributing to KubeCraft
 
-That said, if you have questions, reach out to us
-[one way or another][communication].
+This repository welcomes contributions! If you would like to contribute:
 
-[announcement]: https://cncf.io/news/announcement/2015/07/new-cloud-native-computing-foundation-drive-alignment-among-container
-[Borg]: https://research.google.com/pubs/pub43438.html
-[CNCF]: https://www.cncf.io/about
-[communication]: https://git.k8s.io/community/communication
-[community repository]: https://git.k8s.io/community
-[containerized applications]: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
-[developer's documentation]: https://git.k8s.io/community/contributors/devel#readme
-[Docker environment]: https://docs.docker.com/engine
-[Go environment]: https://go.dev/doc/install
-[kubernetes.io]: https://kubernetes.io
-[Scalable Microservices with Kubernetes]: https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615
-[troubleshooting guide]: https://kubernetes.io/docs/tasks/debug/
+1\. Fork the repository.
 
-## Community Meetings 
+2\. Create a feature branch.
 
-The [Calendar](https://www.kubernetes.dev/resources/calendar/) has the list of all the meetings in the Kubernetes community in a single location.
+3\. Make your changes.
 
-## Adopters
+4\. Submit a pull request.
 
-The [User Case Studies](https://kubernetes.io/case-studies/) website has real-world use cases of organizations across industries that are deploying/migrating to Kubernetes.
+\---
 
-## Governance 
+\## Support
 
-Kubernetes project is governed by a framework of principles, values, policies and processes to help our community and constituents towards our shared goals.
+If you encounter issues, please check the \[Kubernetes troubleshooting guide\](<https://kubernetes.io/docs/tasks/debug/>) or open an issue in this repository.
 
-The [Kubernetes Community](https://github.com/kubernetes/community/blob/master/governance.md) is the launching point for learning about how we organize ourselves.
+\---
 
-The [Kubernetes Steering community repo](https://github.com/kubernetes/steering) is used by the Kubernetes Steering Committee, which oversees governance of the Kubernetes project.
+\## Governance and Roadmap
 
-## Roadmap 
+This project follows the principles of Kubernetes governance. For more details, see the \[Kubernetes Governance Model\](<https://github.com/kubernetes/community/blob/master/governance.md>).
 
-The [Kubernetes Enhancements repo](https://github.com/kubernetes/enhancements) provides information about Kubernetes releases, as well as feature tracking and backlogs.
+The roadmap for this project is aligned with Kubernetes' core development goals, with a focus on providing a learning-friendly version of Kubernetes.
